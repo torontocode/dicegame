@@ -1,0 +1,24 @@
+<div ng-controller="gameCtrl">
+
+  <span ng-click="roll()" ng-show="!rollInProgress" class="cta">Roll</span>&nbsp;
+
+  <div>
+    <ul>
+      <li ng-repeat="die in rolled track by $index">
+        <span ng-show="die.isTriple||die.isSixOrOne" ng-click="addToTable(die,$index)" class="cta">{{die.value}}</span>
+        <span ng-hide="die.isTriple||die.isSixOrOne">{{die.value}}</span>
+      </li>
+    </ul>
+
+    <ul>
+      <li ng-repeat="kept in tabled track by $index">
+        <span>{{kept.value}}</span>
+      </li>
+    </ul>
+  </div>
+  <span class="cta" ng-show="" ng-click="playAgain()">Play again</span>
+  <div>
+    <a ui-sref="home">home</a>
+    <p>Score:&nbsp;{{score}}</p>
+  </div>
+</div>

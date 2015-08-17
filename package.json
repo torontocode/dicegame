@@ -1,0 +1,22 @@
+{
+  "name": "Dice",
+  "version": "1.0.0",
+  "description": "A dice game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dice",
+    "game"
+  ],
+  "author": "Ed Knight",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.12.3",
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.10.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-shell": "^0.4.1"
+  }
+}
