@@ -32,7 +32,7 @@ dice.controller('gameCtrl',['$scope', '$timeout', function($scope, $timeout){
       $scope.score += scoring[String(die.value+'s')];
       return;
     }
-
+    
     $scope.rolled.splice(i,1);
     $scope.tabled.push(die);
     $scope.score += scoring[String(die.value)];
